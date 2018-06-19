@@ -1,0 +1,552 @@
+{
+  "id": "057f8032-307c-41ab-aae3-df05c1e3e850",
+  "version": 46,
+  "productType": {
+    "typeId": "product-type",
+    "id": "9a360206-0232-41b4-9125-7013125346d5"
+  },
+  "catalogs": [],
+  "masterData": {
+    "current": {
+      "name": {
+        "en": "SODF26",
+        "pt": "SODF26"
+      },
+      "description": {
+        "en": "Solaris SODF26 sunglasses. Pink mirrored lenses express your natural fun and flair.",
+        "pt": "Óculos de sol Solaris SODF26. Lentes espelhadas rosa que expressam a sua elegância e descontração natural."
+      },
+      "categories": [
+        {
+          "typeId": "category",
+          "id": "4520bc80-e9b9-4cfc-95bc-2fdf932a6d20"
+        }
+      ],
+      "categoryOrderHints": {},
+      "slug": {
+        "en": "sodf26"
+      },
+      "masterVariant": {
+        "id": 1,
+        "sku": "8719154107276",
+        "prices": [
+          {
+            "value": {
+              "type": "centPrecision",
+              "currencyCode": "EUR",
+              "centAmount": 3900,
+              "fractionDigits": 2
+            },
+            "id": "b27e62ef-b6fc-4583-bd98-f6c17b064a24"
+          }
+        ],
+        "images": [
+          {
+            "url": "136047-8719154107276-front-01-Solaris-sodf26-eyewear-Black-Black.png",
+            "dimensions": {
+              "w": 0,
+              "h": 0
+            }
+          },
+          {
+            "url": "136046-8719154107276-angle-03-Solaris-sodf26-eyewear-Black-Black.png",
+            "dimensions": {
+              "w": 0,
+              "h": 0
+            }
+          }
+        ],
+        "attributes": [
+          {
+            "name": "front",
+            "value": true
+          },
+          {
+            "name": "angle",
+            "value": true
+          },
+          {
+            "name": "_360",
+            "value": false
+          },
+          {
+            "name": "pricePoint",
+            "value": {
+              "en": "BUDGET",
+              "pt": "ORÇAMENTO"
+            }
+          },
+          {
+            "name": "segment",
+            "value": {
+              "en": "CLASSIC",
+              "pt": "CLÁSSICO"
+            }
+          },
+          {
+            "name": "supplier",
+            "value": "GRANDVISION"
+          },
+          {
+            "name": "brand",
+            "value": "Solaris"
+          },
+          {
+            "name": "brandModel",
+            "value": "SODF26"
+          },
+          {
+            "name": "brandModelCode",
+            "value": "SODF26"
+          },
+          {
+            "name": "brandModelColorCode",
+            "value": "BB"
+          },
+          {
+            "name": "gender",
+            "value": [
+              {
+                "en": "FEMALE",
+                "pt": "MULHER"
+              }
+            ]
+          },
+          {
+            "name": "frameMaterial",
+            "value": {
+              "en": "INJECTED",
+              "pt": "INJETADO"
+            }
+          },
+          {
+            "name": "frameColor",
+            "value": {
+              "en": "BLACK",
+              "pt": "PRETO"
+            }
+          },
+          {
+            "name": "UVCategory",
+            "value": 3
+          },
+          {
+            "name": "polarized",
+            "value": false
+          },
+          {
+            "name": "gradient",
+            "value": false
+          },
+          {
+            "name": "mirror",
+            "value": true
+          },
+          {
+            "name": "glazeble",
+            "value": false
+          },
+          {
+            "name": "templeLength",
+            "value": 145
+          },
+          {
+            "name": "lensWidth",
+            "value": 50
+          },
+          {
+            "name": "bridgeWidth",
+            "value": 21
+          },
+          {
+            "name": "frameWidth",
+            "value": 121
+          },
+          {
+            "name": "header",
+            "value": {
+              "en": "Mrs Pink.",
+              "pt": "Menina Cor-de-Rosa."
+            }
+          },
+          {
+            "name": "description",
+            "value": {
+              "en": "Solaris SODF26 sunglasses. Pink mirrored lenses express your natural fun and flair.",
+              "pt": "Óculos de sol Solaris SODF26. Lentes espelhadas rosa que expressam a sua elegância e descontração natural."
+            }
+          },
+          {
+            "name": "usps",
+            "value": [
+              {
+                "en": "Black round frame. Light, comfortable plastic.",
+                "pt": "Armação preta redonda. Plástico leve e confortável."
+              },
+              {
+                "en": "Mirrored lenses. Reflect sunlight.",
+                "pt": "Lentes espelhadas. Refletem a luz solar."
+              },
+              {
+                "en": "Pink lenses add a touch of style and ensures that objects look natural in colour.",
+                "pt": "Lentes rosa dão um toque de classe e permitem ver os objetos na sua cor natural."
+              },
+              {
+                "en": "UV category 3. For strong sunlight conditions (summer fun and winter sports)."
+              }
+            ]
+          },
+          {
+            "name": "lensType",
+            "value": {
+              "en": "MIRRORED",
+              "pt": "ESPELHADO"
+            }
+          },
+          {
+            "name": "faceShape",
+            "value": [
+              {
+                "key": "oval",
+                "label": {
+                  "pt": "Ovais",
+                  "en": "Oval"
+                }
+              },
+              {
+                "key": "diamond",
+                "label": {
+                  "pt": "Diamante",
+                  "en": "Diamond"
+                }
+              },
+              {
+                "label": {
+                  "en": "Square",
+                  "pt": "Quadrados"
+                },
+                "key": "square"
+              },
+              {
+                "key": "rectangular",
+                "label": {
+                  "pt": "Retangulares",
+                  "en": "Rectangular"
+                }
+              },
+              {
+                "label": {
+                  "en": "Heart",
+                  "pt": "Coração"
+                },
+                "key": "heart"
+              }
+            ]
+          },
+          {
+            "name": "frameType",
+            "value": {
+              "en": "FULL RIM"
+            }
+          },
+          {
+            "name": "frameShape",
+            "value": {
+              "label": {
+                "en": "Round",
+                "pt": "Redondos"
+              },
+              "key": "round"
+            }
+          },
+          {
+            "name": "lensColor",
+            "value": {
+              "en": "PINK",
+              "pt": "ROSA"
+            }
+          }
+        ],
+        "assets": []
+      },
+      "variants": [],
+      "searchKeywords": {}
+    },
+    "staged": {
+      "name": {
+        "en": "SODF26",
+        "pt": "SODF26"
+      },
+      "description": {
+        "en": "Solaris SODF26 sunglasses. Pink mirrored lenses express your natural fun and flair.",
+        "pt": "Óculos de sol Solaris SODF26. Lentes espelhadas rosa que expressam a sua elegância e descontração natural."
+      },
+      "categories": [
+        {
+          "typeId": "category",
+          "id": "4520bc80-e9b9-4cfc-95bc-2fdf932a6d20"
+        }
+      ],
+      "categoryOrderHints": {},
+      "slug": {
+        "en": "sodf26"
+      },
+      "masterVariant": {
+        "id": 1,
+        "sku": "8719154107276",
+        "prices": [
+          {
+            "value": {
+              "type": "centPrecision",
+              "currencyCode": "EUR",
+              "centAmount": 3900,
+              "fractionDigits": 2
+            },
+            "id": "b27e62ef-b6fc-4583-bd98-f6c17b064a24"
+          }
+        ],
+        "images": [
+          {
+            "url": "136047-8719154107276-front-01-Solaris-sodf26-eyewear-Black-Black.png",
+            "dimensions": {
+              "w": 0,
+              "h": 0
+            }
+          },
+          {
+            "url": "136046-8719154107276-angle-03-Solaris-sodf26-eyewear-Black-Black.png",
+            "dimensions": {
+              "w": 0,
+              "h": 0
+            }
+          }
+        ],
+        "attributes": [
+          {
+            "name": "front",
+            "value": true
+          },
+          {
+            "name": "angle",
+            "value": true
+          },
+          {
+            "name": "_360",
+            "value": false
+          },
+          {
+            "name": "pricePoint",
+            "value": {
+              "en": "BUDGET",
+              "pt": "ORÇAMENTO"
+            }
+          },
+          {
+            "name": "segment",
+            "value": {
+              "en": "CLASSIC",
+              "pt": "CLÁSSICO"
+            }
+          },
+          {
+            "name": "supplier",
+            "value": "GRANDVISION"
+          },
+          {
+            "name": "brand",
+            "value": "Solaris"
+          },
+          {
+            "name": "brandModel",
+            "value": "SODF26"
+          },
+          {
+            "name": "brandModelCode",
+            "value": "SODF26"
+          },
+          {
+            "name": "brandModelColorCode",
+            "value": "BB"
+          },
+          {
+            "name": "gender",
+            "value": [
+              {
+                "en": "FEMALE",
+                "pt": "MULHER"
+              }
+            ]
+          },
+          {
+            "name": "frameMaterial",
+            "value": {
+              "en": "INJECTED",
+              "pt": "INJETADO"
+            }
+          },
+          {
+            "name": "frameColor",
+            "value": {
+              "en": "BLACK",
+              "pt": "PRETO"
+            }
+          },
+          {
+            "name": "UVCategory",
+            "value": 3
+          },
+          {
+            "name": "polarized",
+            "value": false
+          },
+          {
+            "name": "gradient",
+            "value": false
+          },
+          {
+            "name": "mirror",
+            "value": true
+          },
+          {
+            "name": "glazeble",
+            "value": false
+          },
+          {
+            "name": "templeLength",
+            "value": 145
+          },
+          {
+            "name": "lensWidth",
+            "value": 50
+          },
+          {
+            "name": "bridgeWidth",
+            "value": 21
+          },
+          {
+            "name": "frameWidth",
+            "value": 121
+          },
+          {
+            "name": "header",
+            "value": {
+              "en": "Mrs Pink.",
+              "pt": "Menina Cor-de-Rosa."
+            }
+          },
+          {
+            "name": "description",
+            "value": {
+              "en": "Solaris SODF26 sunglasses. Pink mirrored lenses express your natural fun and flair.",
+              "pt": "Óculos de sol Solaris SODF26. Lentes espelhadas rosa que expressam a sua elegância e descontração natural."
+            }
+          },
+          {
+            "name": "usps",
+            "value": [
+              {
+                "en": "Black round frame. Light, comfortable plastic.",
+                "pt": "Armação preta redonda. Plástico leve e confortável."
+              },
+              {
+                "en": "Mirrored lenses. Reflect sunlight.",
+                "pt": "Lentes espelhadas. Refletem a luz solar."
+              },
+              {
+                "en": "Pink lenses add a touch of style and ensures that objects look natural in colour.",
+                "pt": "Lentes rosa dão um toque de classe e permitem ver os objetos na sua cor natural."
+              },
+              {
+                "en": "UV category 3. For strong sunlight conditions (summer fun and winter sports)."
+              }
+            ]
+          },
+          {
+            "name": "lensType",
+            "value": {
+              "en": "MIRRORED",
+              "pt": "ESPELHADO"
+            }
+          },
+          {
+            "name": "faceShape",
+            "value": [
+              {
+                "key": "oval",
+                "label": {
+                  "pt": "Ovais",
+                  "en": "Oval"
+                }
+              },
+              {
+                "key": "diamond",
+                "label": {
+                  "pt": "Diamante",
+                  "en": "Diamond"
+                }
+              },
+              {
+                "label": {
+                  "en": "Square",
+                  "pt": "Quadrados"
+                },
+                "key": "square"
+              },
+              {
+                "key": "rectangular",
+                "label": {
+                  "pt": "Retangulares",
+                  "en": "Rectangular"
+                }
+              },
+              {
+                "label": {
+                  "en": "Heart",
+                  "pt": "Coração"
+                },
+                "key": "heart"
+              }
+            ]
+          },
+          {
+            "name": "frameType",
+            "value": {
+              "en": "FULL RIM"
+            }
+          },
+          {
+            "name": "frameShape",
+            "value": {
+              "label": {
+                "en": "Round",
+                "pt": "Redondos"
+              },
+              "key": "round"
+            }
+          },
+          {
+            "name": "lensColor",
+            "value": {
+              "en": "PINK",
+              "pt": "ROSA"
+            }
+          }
+        ],
+        "assets": []
+      },
+      "variants": [],
+      "searchKeywords": {}
+    },
+    "published": true,
+    "hasStagedChanges": false
+  },
+  "catalogData": {},
+  "taxCategory": {
+    "typeId": "tax-category",
+    "id": "3145c584-9809-4875-a07c-8eb22e25153f"
+  },
+  "lastVariantId": 1,
+  "createdAt": "2018-05-24T14:50:11.428Z",
+  "lastModifiedAt": "2018-06-11T14:45:45.457Z",
+  "lastMessageSequenceNumber": 5
+}

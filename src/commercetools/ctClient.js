@@ -5,7 +5,7 @@ const sdk_middleware_http_1 = require("@commercetools/sdk-middleware-http");
 const sdk_client_1 = require("@commercetools/sdk-client");
 const node_fetch_1 = require("node-fetch");
 const configStore = require("configstore");
-const pkg = require('../package.json');
+const pkg = require('../../package.json');
 //console.log(colors.red( figlet.textSync('Commerce tool Kli',{ horizontalLayout:'full'})))
 const store = new configStore(pkg.name);
 const settings = store.all;

@@ -4,7 +4,7 @@ import { createLoggerMiddleware } from '@commercetools/sdk-middleware-logger'
 import { createClient } from '@commercetools/sdk-client'
 import fetch from "node-fetch"
 import * as configStore from "configstore"
-const pkg = require('../package.json');
+const pkg = require('../../package.json');
 
 //console.log(colors.red( figlet.textSync('Commerce tool Kli',{ horizontalLayout:'full'})))
 
@@ -23,8 +23,6 @@ export const loginMiddelware = createAuthMiddlewareForClientCredentialsFlow({
         clientSecret:settings.clientSecret,
     },
     scopes: [`manage_products:${settings.projectKey}`,`manage_types:${settings.projectKey}`],
-
-    // Optional if not globally available
     fetch,
 })
 

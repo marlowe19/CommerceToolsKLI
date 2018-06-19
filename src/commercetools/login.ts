@@ -4,7 +4,7 @@ import { createRequestBuilder } from '@commercetools/api-request-builder'
 import { createAuthMiddlewareForClientCredentialsFlow } from '@commercetools/sdk-middleware-auth'
 import fetch from "node-fetch"
 const Configstore = require('configstore');
-const pkg = require('../package.json');
+const pkg = require('../../package.json');
 
 // create a Configstore instance with an unique ID e.g.
 // Package name and optionally some default values

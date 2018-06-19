@@ -14,7 +14,7 @@ import * as figlet from "figlet"
 import * as clear from "clear"
 import {configQuestions} from "./inquirer/questions";
 import {client2} from "./commercetools/ctClient";
-const pkg = require('./package.json');
+const pkg = require('../package.json');
 import * as prettyjson from "prettyjson"
 clear()
 //console.log(colors.red( figlet.textSync('Commerce tool Kli',{ horizontalLayout:'full'})))
@@ -46,15 +46,9 @@ program.command('config')
     })
 
 
-
-
-
 const httpRequestService = new requestService(store.all)
 
 
-//process.env["CT_KLI_COMMERCE_TOOLS_PROJECT_KEY"] = "grandvision-dev-1"
-
-//console.log("env",process.env)
 
 program.command('list')
     .alias('ls')
