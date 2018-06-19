@@ -20,7 +20,6 @@ clear()
 //console.log(colors.red( figlet.textSync('Commerce tool Kli',{ horizontalLayout:'full'})))
 
 const store = new configStore(pkg.name)
-
 const projectKey = store.get('projectKey')
 const clientId = store.get('clientId')
 const clientSecret = store.get('clientSecret')
@@ -96,12 +95,17 @@ program.command('unpublish [id]')
 
 
                 const allTypes= _.map(productTypes,'name');
-                let productType = _.pick(_.find(productTypes,{name:args.productType}),['id','name'])
+                let ctProductType = _.pick(_.find(productTypes,{name:args.productType}),['id','name'])
 
-                if(productType.id){
-                    let result = await changeProductStateByProductType(productType.name,productType.id,
+                // noinspection TypeScriptUnresolvedVariable
+                // @ts-ignore
+                if(ctProductType.id){
+                    // noinspection TypeScriptUnresolvedVariable
+                    // @ts-ignore
+                    let result = await changeProductStateByProductType(ctProductType.name,ctProductType.id,
                         "unpublish",
-                        httpRequestService.getProductsByProductType(productType.id))
+                        // @ts-ignore
+                        httpRequestService.getProductsByProductType(ctProductType.id))
                 }
 
             }catch (error){
