@@ -4,12 +4,10 @@ import * as colors from "colors";
 import * as csv from "csv";
 import * as inquirer from "inquirer"
 import * as program from "commander"
-import loginMiddelWare from "./commercetools/login"
 import { createRequestBuilder } from '@commercetools/api-request-builder'
 import {requestService} from "./commercetools/product";
-import fetch from "node-fetch"
 import * as  _ from "lodash"
-import * as configStore from "configstore"
+import  store from "./lib/store"
 import * as figlet from "figlet"
 import * as clear from "clear"
 import {configQuestions} from "./inquirer/questions";
@@ -19,7 +17,6 @@ import * as prettyjson from "prettyjson"
 clear()
 //console.log(colors.red( figlet.textSync('Commerce tool Kli',{ horizontalLayout:'full'})))
 
-const store = new configStore(pkg.name)
 const projectKey = store.get('projectKey')
 const clientId = store.get('clientId')
 const clientSecret = store.get('clientSecret')

@@ -14,7 +14,7 @@ const inquirer = require("inquirer");
 const program = require("commander");
 const product_1 = require("./commercetools/product");
 const _ = require("lodash");
-const configStore = require("configstore");
+const store_1 = require("./lib/store");
 const clear = require("clear");
 const questions_1 = require("./inquirer/questions");
 const ctClient_1 = require("./commercetools/ctClient");
@@ -22,27 +22,26 @@ const pkg = require('../package.json');
 const prettyjson = require("prettyjson");
 clear();
 //console.log(colors.red( figlet.textSync('Commerce tool Kli',{ horizontalLayout:'full'})))
-const store = new configStore(pkg.name);
-const projectKey = store.get('projectKey');
-const clientId = store.get('clientId');
-const clientSecret = store.get('clientSecret');
-const restUrl = store.get('apiUrl');
-const authUrl = store.get('authUrl');
+const projectKey = store_1.default.get('projectKey');
+const clientId = store_1.default.get('clientId');
+const clientSecret = store_1.default.get('clientSecret');
+const restUrl = store_1.default.get('apiUrl');
+const authUrl = store_1.default.get('authUrl');
 program.command('config')
     .description('configure project')
     .action(function (args) {
     inquirer.prompt(questions_1.configQuestions).then(answers => {
         // Use user feedback for... whatever!!
         console.log("answers", answers);
-        store.set('clientId', answers.clientId);
-        store.set('clientSecret', answers.clientSecret);
-        store.set('apiUrl', answers.restApiUrl);
-        store.set('authUrl', answers.authUrl);
-        store.set('projectKey', answers.projectKey);
-        console.log("settings", store.all);
+        store_1.default.set('clientId', answers.clientId);
+        store_1.default.set('clientSecret', answers.clientSecret);
+        store_1.default.set('apiUrl', answers.restApiUrl);
+        store_1.default.set('authUrl', answers.authUrl);
+        store_1.default.set('projectKey', answers.projectKey);
+        console.log("settings", store_1.default.all);
     });
 });
-const httpRequestService = new product_1.requestService(store.all);
+const httpRequestService = new product_1.requestService(store_1.default.all);
 program.command('list')
     .alias('ls')
     .description(' list product attributes')
@@ -105,7 +104,7 @@ program.command('product <id>')
     .option('-r, --raw', 'show raw json result')
     .action(function (productId, args) {
     if (!projectKey) {
-        console.log(store.all);
+        console.log(store_1.default.all);
         console.log(colors.red('no projectkey set please run "ctkli config"'));
         process.exit(9);
     }

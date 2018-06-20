@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "test": "test",
+    "test": "jest",
     "start": "dist/index.js"
   },
   "keywords": [
@@ -45,13 +45,16 @@
     "prettyjson": "^1.2.1"
   },
   "devDependencies": {
+    "@types/jest": "^23.1.1",
     "clear": "latest",
-    "tsc": "^1.20150623.0",
-    "typescript": "^2.3.3",
-    "typescript-eslint-parser": "^3.0.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-promise": "^3.5.0",
-    "nodemon": "^1.17.5"
+    "jest": "^23.1.0",
+    "nodemon": "^1.17.5",
+    "ts-jest": "^22.4.6",
+    "tsc": "^1.20150623.0",
+    "typescript": "^2.3.3",
+    "typescript-eslint-parser": "^3.0.0"
   }
 }
