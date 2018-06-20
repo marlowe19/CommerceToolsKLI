@@ -1,4 +1,4 @@
-# Commerce Tools CLI
+# Commerce Tools CLI ![Build Status](https://travis-ci.org/marlowe19/CommerceToolsKLI.svg?branch=master)
 CLI for the commerce tools APIs
 
 This is the unoffical Commerce Tools Command Line Interface(CLI) to make working with products easier and faster.
