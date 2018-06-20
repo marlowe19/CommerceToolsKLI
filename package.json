@@ -1,6 +1,6 @@
 {
   "name": "commercetoolscli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Commerce tools cli",
   "main": "dist/index.js",
   "bin": {
@@ -53,6 +53,5 @@
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-promise": "^3.5.0",
     "nodemon": "^1.17.5"
-
   }
 }
