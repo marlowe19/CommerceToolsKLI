@@ -18,7 +18,7 @@ const configStore = require("configstore");
 const clear = require("clear");
 const questions_1 = require("./inquirer/questions");
 const ctClient_1 = require("./commercetools/ctClient");
-const pkg = require('./package.json');
+const pkg = require('../package.json');
 const prettyjson = require("prettyjson");
 clear();
 //console.log(colors.red( figlet.textSync('Commerce tool Kli',{ horizontalLayout:'full'})))
@@ -43,8 +43,6 @@ program.command('config')
     });
 });
 const httpRequestService = new product_1.requestService(store.all);
-//process.env["CT_KLI_COMMERCE_TOOLS_PROJECT_KEY"] = "grandvision-dev-1"
-//console.log("env",process.env)
 program.command('list')
     .alias('ls')
     .description(' list product attributes')
@@ -81,9 +79,15 @@ program.command('unpublish [id]')
             try {
                 let productTypes = yield getProductTypes();
                 const allTypes = _.map(productTypes, 'name');
-                let productType = _.pick(_.find(productTypes, { name: args.productType }), ['id', 'name']);
-                if (productType.id) {
-                    let result = yield changeProductStateByProductType(productType.name, productType.id, "unpublish", httpRequestService.getProductsByProductType(productType.id));
+                let ctProductType = _.pick(_.find(productTypes, { name: args.productType }), ['id', 'name']);
+                // noinspection TypeScriptUnresolvedVariable
+                // @ts-ignore
+                if (ctProductType.id) {
+                    // noinspection TypeScriptUnresolvedVariable
+                    // @ts-ignore
+                    let result = yield changeProductStateByProductType(ctProductType.name, ctProductType.id, "unpublish", 
+                    // @ts-ignore
+                    httpRequestService.getProductsByProductType(ctProductType.id));
                 }
             }
             catch (error) {
