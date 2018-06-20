@@ -24,3 +24,15 @@ npm install -g commercetoolscli
 ```
 
 This will provide you with the globally accessible `commercetools` command.
+
+## Commands
+The command `commercetools --help` lists the available commands and `commercetools <command> --help` shows more details for an individual command.
+
+Below is a brief list of the available commands and their function:
+
+Command | Description
+------- | -----------
+**config** | prompt an sequence of questions to authenticate to your commercetools project
+**products** | append `<id>` to get same for all product attributes.
+**publish** | append `<id>` to unpublish a product by their id.
+**help** | Display help information about the CLI or specific commands.
