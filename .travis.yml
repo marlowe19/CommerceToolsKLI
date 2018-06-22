@@ -8,7 +8,7 @@ script:
 deploy:
   provider: npm
   email: marlowe.antonius@gmail.com
-  api_key: NPM_TOKEN
+  api_key: $NPM_TOKEN
   tag: next
   on:
     tags: false
