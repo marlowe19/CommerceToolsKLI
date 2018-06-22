@@ -25,6 +25,16 @@ class requestService {
         };
         return request;
     }
+    deleteById(productId, version) {
+        let request = {
+            uri: this.productsService.byId(productId).build(),
+            method: "DELETE",
+            body: JSON.stringify({
+                version: version
+            })
+        };
+        return request;
+    }
     unpublishById(productId, version) {
         console.log("product version", version);
         let request = {

@@ -1,4 +1,4 @@
-import {unpublishById} from "./lib/unpublish"
+import {unpublishById} from "./lib/unpublishProducts"
 
 
     it('should return status code 200', async function () {

@@ -9,22 +9,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const ctClient_1 = require("../commercetools/ctClient");
+const commerceToolsRequestService_1 = require("./commerceToolsRequestService");
 const colors = require("colors");
-const product_1 = require("../commercetools/product");
-const store_1 = require("./store");
-const httpRequestService = new product_1.requestService(store_1.default.all);
 function unpublishById(id, version) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            let request = yield ctClient_1.client2.execute(httpRequestService.unpublishById(id, version));
-            console.log('description: %s', colors.bold(`unpublishing by id: ${id}`));
+            const request = yield ctClient_1.client2.execute(commerceToolsRequestService_1.default.unpublishById(id, version));
+            console.log(colors.blue(`unpublishing by id: ${id}`));
             return request;
         }
         catch (error) {
-            let request = yield ctClient_1.client2.execute(httpRequestService.unpublishById(id, version));
-            console.log('description: %s', colors.bold(`unpublishing by id: ${id}`));
-            console.log("the type", typeof (error));
-            return "hallo";
+            console.log(colors.red(`attempt to unpublish by id: ${id} failed`));
         }
     });
 }
