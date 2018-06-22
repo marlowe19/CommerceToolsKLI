@@ -1,6 +1,6 @@
 {
   "name": "commercetoolscli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Commerce tools cli",
   "main": "dist/index.js",
   "bin": {
