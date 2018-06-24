@@ -43,11 +43,11 @@
     "lodash": "^4.17.10",
     "node-fetch": "^2.1.2",
     "prettyjson": "^1.2.1",
-    "tslint": "^5.10.0"
+    "tslint": "^5.10.0",
+    "clear": "latest"
   },
   "devDependencies": {
     "@types/jest": "^23.1.1",
-    "clear": "latest",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-promise": "^3.5.0",
